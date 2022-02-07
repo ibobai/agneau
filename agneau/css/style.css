@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
-/*:root{
+:root{
    --main-color:#8e44ad;
    --black:#222;
    --white:#fff;
@@ -11,25 +11,10 @@
    --border:.1rem solid var(--black);
    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
    --text-shadow:0 1.5rem 3rem rgba(0,0,0,.3);
-}*/
-
-:root {
-   --main-color:rgb(93, 211, 24); /*Main color*/
-   --black:rgb(16, 214, 16); /*All writing color and Cards*/
-   --white:rgb(221, 14, 14); /*Footer and Header*/
-   --light-black:rgb(167, 27, 196); /*Writing in footrer and cards*/
-   --light-white:rgba(245, 235, 235, 0.6); /*?*/
-   --dark-bg:rgba(126, 11, 101, 0.7);
-   --light-bg:rgb(223, 21, 21);
-   --border:.1rem solid var(--black);
-   --box-shadow:0 .5rem 1rem rgb(48, 197, 19); /*Header and cards shadows*/
-   --text-shadow:0 1.5rem 3rem rgba(194, 235, 14, 0.3); /*Text shadow*/
-   --background-color : #fff;
-   
-
 }
 
-:root{
+
+.dark-theme {
    --main-color:rgb(43, 35, 35);
    --black:rgb(167, 20, 20); 
    --white:#fff;
@@ -43,7 +28,10 @@
    --background-color : #000;
 } 
 
-
+#icon{
+   width: 30px;
+   cursor: pointer;
+}
 
 
 *{
