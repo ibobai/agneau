@@ -115,17 +115,16 @@ img.addEventListener('change', () => {
 /* ColorPiker */
 
 let colorpicker = document.getElementById('colorpicker');
-
-
+console.log("the main color is outside: " + colorpicker.value);
 
 setInterval(()=>{
    let color = colorpicker.value;
-   document.documentElement.style.setProperty('--main-color', color);  
-}, 200);
+   document.documentElement.style.setProperty('--main-color', color);
+   console.log("the main color is : " + color);
+}, 200); 
 
-/*
-setInterval(()=>{
+/*  setInterval(()=>{
    let color = colorpicker.value;
    document.body.style.backgroundColor = color;
 }, 200);
-*/ 
+  */
