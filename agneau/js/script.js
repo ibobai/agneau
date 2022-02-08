@@ -55,6 +55,7 @@ loadMoreBtn.onclick = () =>{
 
 //Dark mode
 
+
 var icon = document.getElementById("icon");
 icon.onclick = function(){
   document.body.classList.toggle("dark-theme");
@@ -62,6 +63,69 @@ icon.onclick = function(){
       icon.src = "/images/sunIcon.png"
    }else{
       icon.src = "/images/moon.png"
-
    } 
 }
+
+
+/*
+let theme = localStorage.getItem('data-theme');
+
+const changeThemeToDark = () => {
+    document.documentElement.setAttribute("data-theme", "dark") // set theme to dark
+    localStorage.setItem("data-theme", "dark") // save theme to local storage
+}
+
+const changeThemeToLight = () => {
+    document.documentElement.setAttribute("data-theme", "light") // set theme light
+    localStorage.setItem("data-theme", 'light') // save theme to local storage
+}
+
+
+
+icon.onclick = () => {
+   let theme = localStorage.getItem('data-theme'); // Retrieve saved them from local storage
+    if (theme ==='dark'){
+      changeThemeToLight();
+      icon.src = "/images/moon.png";
+    }else{
+        changeThemeToDark();
+        icon.src = "/images/sunIcon.png";
+    }  
+
+    console.log("The actual mode is : "+localStorage.getItem("data-theme"))
+}
+
+*/
+
+/*
+// Get the element based on ID
+const checkbox = document.getElementById("switch");
+// Apply retrived them to the website
+img.addEventListener('change', () => {
+    let theme = localStorage.getItem('data-theme'); // Retrieve saved them from local storage
+    if (theme ==='dark'){
+        changeThemeToLight()
+    }else{
+        changeThemeToDark()
+    }   
+});
+*/
+
+
+/* ColorPiker */
+
+let colorpicker = document.getElementById('colorpicker');
+
+
+
+setInterval(()=>{
+   let color = colorpicker.value;
+   document.documentElement.style.setProperty('--main-color', color);  
+}, 200);
+
+/*
+setInterval(()=>{
+   let color = colorpicker.value;
+   document.body.style.backgroundColor = color;
+}, 200);
+*/ 

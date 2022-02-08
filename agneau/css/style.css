@@ -14,6 +14,23 @@
 }
 
 
+/*
+html[data-theme='dark']{
+   --main-color:rgb(43, 35, 35);
+   --black:rgb(167, 20, 20); 
+   --white:#fff;
+   --light-black:rgb(161, 152, 152);
+   --light-white:rgba(248, 248, 248, 0.932);
+   --dark-bg:rgba(0,0,0,.7);
+   --light-bg:rgb(7, 7, 7);
+   --border:.1rem solid var(--black);
+   --box-shadow:0 .5rem 1rem rgba(238, 247, 238, 0.932);
+   --text-shadow:0 1.5rem 3rem rgba(235, 222, 222, 0.3);
+   --background-color : #000;
+
+}
+*/
+
 
 .dark-theme {
    --main-color:rgb(43, 35, 35);
@@ -29,11 +46,18 @@
    --background-color : #000;
 } 
 
+
+
 #icon{
    width: 30px;
    cursor: pointer;
 }
 
+
+#colorpicker{
+   border-radius: 30px;
+   
+}
 
 *{
    font-family: 'Poppins', sans-serif;
