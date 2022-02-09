@@ -119,8 +119,8 @@ console.log("the main color is outside: " + colorpicker.value);
 
 setInterval(()=>{
    let color = colorpicker.value;
+   //document.body.style.backgroundColor = color;
    document.documentElement.style.setProperty('--main-color', color);
-   console.log("the main color is : " + color);
 }, 200); 
 
 /*  setInterval(()=>{
